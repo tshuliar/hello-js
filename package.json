@@ -1,0 +1,23 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/static-server ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tshuliar/hello-js.git"
+  },
+  "author": "Tania",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tshuliar/hello-js/issues"
+  },
+  "homepage": "https://github.com/tshuliar/hello-js#readme",
+  "dependencies": {
+    "static-server": "^2.2.1"
+  }
+}
