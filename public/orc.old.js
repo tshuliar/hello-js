@@ -1,13 +1,19 @@
+
 function playS ( id ) {
   const audio = document.getElementById( id );
-  const divkey = document.getElementById( k+id );
+  const divkey = document.getElementById( 'k'+id );
   audio.currentTime = 0;
   audio.play();
+  divkey.className = 'active';
+}
+function clearS( id ) {
+  const divkey = document.getElementById( 'k'+id );
+  divkey.className = '';
 }
 
 function myKeysDown( n ){
     switch ( n.keyCode) {
-        case 65: playS('01'); break;
+        case 65: playS('01');break;
         case 83: playS('02');break;
         case 68: playS('03');break;
         case 70: playS('04');break;

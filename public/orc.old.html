@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body 
+    onkeydown="myKeysDown( event )" onkeydown="orc.css"
+    onkeyup="myKeysUp( event )" onkeyup="orc.css">
+ 
+
+
+    <h1>orchestra</h1>
+
+    <div>
+        <div data-key="65" id="k01">A</div>
+        <div data-key="83" id="k02">S</div>
+
+    </div>
+
+    <audio data-key="65" id="snd01" src="sounds/boom.wav"></audio>
+    <audio data-key="83" id="snd02" src="sounds/clap.wav"></audio>
+    <audio data-key="68" id="snd03" src="sounds/hihat.wav"></audio>
+    <audio data-key="70" id="snd04" src="sounds/kick.wav"></audio>
+
+    <script src="orc.old.js"></script>
+
+</body>
+</html>
