@@ -23,3 +23,15 @@ td {
     font-weight: bold;
     
 }
+.c-2        { background-color: rgb(36, 148, 54);}
+.c-4        { background-color: rgb(111, 150, 48);}
+.c-8        { background-color: rgb(92, 24, 155);}
+.c-16       { background-color: rgb(75, 61, 156);}
+.c-32       { background-color: rgb(60, 143, 108);}
+.c-64       { background-color: rgb(105, 131, 35);}
+.c-128      { background-color: rgb(216, 21, 21);}
+.c-256      { background-color: rgb(45, 230, 21);}
+.c-512      { background-color: rgb(167, 64, 158);}
+.c-1024     { background-color: rgb(2, 100, 46);}
+.c-2048     { background-color: rgb(211, 38, 105);}
+.c-9192     { background-color: rgb(20, 82, 218);}
