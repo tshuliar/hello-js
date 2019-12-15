@@ -28,3 +28,7 @@ td.box2 {
 td.box3 {
     background-color: brown;
 }
+
+td.z {
+    background-size: 0px;
+}
