@@ -17,19 +17,31 @@ td {
     background-size: cover;
 }
 
-td.box-1 {
+.box-1 {
     background-image: url(image/box1.png);
 }
 
-td.box-2 {
+.box-2 {
     background-image: url(image/box2.png);
 }
 
-td.box-3 {
+.box-3 {
     background-color: brown;
 }
 
-td.z {
+.box-4 {
+    background-color: gray;
+}
+
+.box-5 {
+    background-color:green;
+}
+
+.box-6 {
+    background-color: yellow;
+}
+
+.z {
     background-size: 0px;
 }
 
