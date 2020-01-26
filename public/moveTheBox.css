@@ -44,6 +44,9 @@ td {
 .z {
     background-size: 0px;
 }
+.box-999 {
+    background-color: black;
+}
 
 buttons {
     text-align: center;
