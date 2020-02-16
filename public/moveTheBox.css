@@ -17,6 +17,17 @@ td {
     background-size: cover;
 }
 
+.box {
+    border: 1px solid white;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .box-1 {
     background-image: url(image/box1.png);
 }
@@ -34,7 +45,7 @@ td {
 }
 
 .box-5 {
-    background-color:green;
+    background-color: green;
 }
 
 .box-6 {
@@ -44,10 +55,11 @@ td {
 .z {
     background-size: 0px;
 }
+
 .box-999 {
     background-color: black;
 }
 
-buttons {
+#buttons {
     text-align: center;
 }
