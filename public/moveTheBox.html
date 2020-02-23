@@ -13,7 +13,7 @@
 
 <body>
 
-    <table id="move-the-box" onclick="boardClick( event )">
+    <table id="move-the-box" onmouseover="mouseOver(event)">
         <tr>
             <td></td>
             <td></td>
@@ -80,37 +80,45 @@
         <tr>
             <td></td>
             <td></td>
-            <td class="box-2"></td>
+            <td class="box-2 "></td>
             <td></td>
-            <td class="box-1"></td>
+            <td class="box-1 "></td>
             <td></td>
             <td></td>
         </tr>
     </table>
 
-    <button onclick="testMove()">Click</button>
+    <!-- <button onclick="testMove() ">Click</button> -->
 
-    <script src="jquery-3.4.1.min.js"></script>
 
-    <script>
+    <!-- <script>
         function testMove() {
             moveBox([7, 2], [7, 4]);
             moveBox([7, 4], [7, 2]);
         }
-    </script>
+    </script> -->
 
-    <!-- <div class="box-1 move-the-box">
+    <!-- <div class="box-1 move-the-box ">
 
     </div> -->
 
     <div id="buttons">
-        <button onclick="moveLeft()">L</button> <br>
-        <button onclick="moveRight()">R</button>
-        <button onclick="moveUp()"> U </button> <br>
-        <button onclick="moveDown()">D</button>
+        <div id="btnU" onclick="moveUp()">&#8593;</div>
+        <div id="btnL" onclick="moveLeft()">&#8592;</div>
+        <div id="btnR" onclick="moveRight()">&#8594;</div>
+        <div id="btnD" onclick="moveDown()">&#8595;</div>
     </div>
 
-    <script src="moveTheBox.js"></script>
+    <script src="jquery-3.4.1.min.js "></script>
+    <script src="moveTheBox-board.js "></script>
+    <script src="moveTheBox-handler.js "></script>
+
+    <script>
+        drawBoard();
+    </script>
+
+
+
 
 </body>
 

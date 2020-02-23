@@ -1,29 +1,3 @@
-var bCol = 7;
-var bRow = 8;
-var board = [
-    [0, 0, 0, 1, 0, 0, 0],
-    [0, 0, 0, 1, 0, 0, 0],
-    [0, 0, 1, 2, 0, 0, 0],
-    [0, 1, 2, 3, 0, 0, 0],
-    [0, 2, 1, 4, 0, 0, 0],
-    [0, 1, 5, 1, 0, 0, 0],
-    [1, 3, 1, 1, 0, 0, 0],
-    [5, 5, 3, 4, 4, 0, 0]
-];
-
-// var board = [
-//     [0, 0, 0, 0, 0, 0, 0],
-//     [0, 0, 0, 0, 0, 0, 0],
-//     [0, 0, 1, 0, 0, 0, 0],
-//     [0, 0, 1, 0, 0, 0, 0],
-//     [0, 0, 2, 0, 0, 0, 0],
-//     [0, 0, 2, 0, 0, 2, 0],
-//     [0, 0, 1, 0, 1, 1, 0],
-//     [0, 1, 2, 0, 2, 2, 0]
-// ];
-
-var elBoard = document.querySelectorAll('table#move-the-box td');
-var selBox = [];
 var animationCounter = 0;
 
 function boomH() {
@@ -113,39 +87,18 @@ function gravitation() {
     }
 }
 
-function drawBoard() {
-
-    gravitation();
-    while (animationCounter > 0) {
-        console.log(animationCounter);
-    };
-    let Boom = boom();
-    for (let r = 0; r < bRow; r++) { //всі рядки
-        for (let c = 0; c < bCol; c++) { //всі стовпчики
-            let i = bCol * r + c; // всі клітинки
-            if (board[r][c] > 0) {
-                elBoard[i].className = 'box-' + board[r][c];
-            } else {
-                elBoard[i].className = '';
-            }
-        }
-    }
-    if (Boom) {
-        setTimeout(function() { clearBoom(); }, 1000);
-    }
-
-}
 
 
-function boardClick(e) {
+// gravitation();
+// while (animationCounter > 0) {
+//     console.log(animationCounter);
+// };
+// let Boom = boom();
+// if (Boom) {
+//     setTimeout(function() { clearBoom(); }, 500);
+// }
 
-    let r = e.target.parentNode.rowIndex;
-    let c = e.target.cellIndex;
-    if (board[r][c] > 0) {
-        selBox = [r, c];
-    }
 
-};
 
 function moveUp() {
     console.log(selBox);
