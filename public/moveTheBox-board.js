@@ -13,7 +13,7 @@ var board = [
     [0, 2, 1, 4, 0, 0, 0],
     [0, 1, 5, 1, 0, 0, 0],
     [1, 3, 1, 1, 0, 0, 0],
-    [5, 5, 3, 4, 4, 0, 0]
+    [5, 5, 3, 4, 6, 0, 0]
 ];
 
 function drawBoard() {
@@ -31,7 +31,16 @@ function drawBoard() {
 
 }
 
+function moveCells(s, d) {
+    board[d[0]][d[1]] = board[s[0]][s[1]];
+    board[s[0]][s[1]] = 0;
+}
 
+function swapCells(s, d) {
+    let t = board[s[0]][d[1]];
+    board[s[0]][s[1]] = board[d[0]][d[1]];
+    board[d[0]][d[1]] = t;
+}
 
 
 

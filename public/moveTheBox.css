@@ -37,19 +37,19 @@ td {
 }
 
 .box-3 {
-    background-color: brown;
+    background-image: url(image/box3.jpg);
 }
 
 .box-4 {
-    background-color: gray;
+    background-image: url(image/box4.jpg);
 }
 
 .box-5 {
-    background-color: green;
+    background-image: url(image/box5.jpg)
 }
 
 .box-6 {
-    background-color: yellow;
+    background-image: url(image/box6.jpg);
 }
 
 .z {
